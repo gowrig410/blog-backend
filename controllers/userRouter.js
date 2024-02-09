@@ -3,7 +3,7 @@ const userModel=require("../models/userModel")
 
 const router=express.Router()
 
-router.post("/add",async(req,res)=>{
+router.post("/signup",async(req,res)=>{
     let data=req.body
     let user=new userModel(data)
     let result=await user.save()
